@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riguri X-BAGURI</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f4f3;
+      color: #222;
+    }
+
+    header {
+      background: #163d2b;
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-bottom: 0;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .produse {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 20px;
+    }
+
+    .produs {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 3px 10px #00000015;
+    }
+
+    .produs img {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .pret {
+      color: #16733d;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .contact {
+      background: #163d2b;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      margin-top: 25px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Riguri X-BAGURI</h1>
+    <p>Produse pentru pescuit</p>
+  </header>
+
+  <main>
+    <h2>Produsele noastre</h2>
+
+    <section class="produse">
+
+      <article class="produs">
+        <img src="imagine1.jpg" alt="Riguri feeder">
+        <h3>Riguri feeder</h3>
+        <p class="pret">5 lei</p>
+      </article>
+
+      <article class="produs">
+        <img src="imagine2.jpg" alt="Baguri">
+        <h3>Baguri</h3>
+        <p class="pret">14 lei</p>
+      </article>
+
+      <article class="produs">
+        <img src="imagine3.jpg" alt="Method feeder">
+        <h3>Method feeder</h3>
+        <p class="pret">10 lei</p>
+      </article> 
+      
+      <article class="produs">
+        <img src="imagine4.jpg" alt="Pop-up">
+        <h3>Pop-up</h3>
+        <p class="pret">25 lei</p>
+      </article>  
+      
+       <article class="produs">
+         <img src="imagine5.jpg" alt="Gel Neon">
+         <h3>Gel Neon</h3>
+         <p class="pret">22 lei</p>
+       </article>  
+      
+    </section>
+  </main>
+
+  <section class="contact">
+    <h2>Contact WhatsApp</h2>
+    <p>Pentru comenzi și informații, scrie-mi pe WhatsApp:</p>
+
+    <a
+      class="whatsapp"
+      href="https://wa.me/40740456716"
+      target="_blank"
+      rel="noopener noreferrer">
+      WhatsApp: 0740 456 716
+    </a>
+  </section>
+
+  <footer>
+    Riguri X-BAGURI
+  </footer>
+
+</body>
+</html>
